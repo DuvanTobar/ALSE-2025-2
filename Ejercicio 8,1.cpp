@@ -3,21 +3,22 @@
 using namespace std;
 int main()
 {
-    printf("Bienvenido al programa para calcular el interes compuesto!");
+    printf("Bienvenido al programa para calcular el interes compuesto!\nPor favor digite los datos en el formato solicitado.\n");
     float ci, tia;
     int n,t;
     double mf;
-    cout << "Por favor ingrese la cantidad inicial de capital que desea invertir:";
+    cout << "\nPor favor ingrese la cantidad inicial de capital que desea invertir (Pesos Colombianos):";
     cin >> ci;
-    cout << "Ahora ingrese la tasa de interes anual aplicada (Importante colocarla en formato decimal, por ejemplo 5% = 0.05):";
+    cout << "\nAhora ingrese la tasa de interes anual aplicada (Importante colocarla en formato decimal, por ejemplo 5% = 0.05):";
     cin >> tia;
-    cout << "Ahora ingrese el numero de veces que se aplicara el interes anualmente:";
+    cout << "\nAhora ingrese el numero de veces que se aplicara el interes anualmente:";
     cin >> n;
-    cout << "Finalmente ingrese la cantidad de años en la cual dejara invertido su dinero:";
+    cout << "\nFinalmente ingrese la cantidad de años en la cual dejara invertido su dinero:";
     cin >> t;
     mf=ci*pow(1+tia/n,n*t);
-    printf("Realizando calculos.......");
-    cout << "El monto final es:" << mf;
-    printf("Gracias por usar el programa!");
+    printf("\nRealizando calculos.......Por favor espere...\n");
+    cout << "\nEl monto final es:" << mf;
+    printf("\nGracias por usar el programa!");
+    printf("\nFIN DE LA EJECUCION.");
     return 0;
 }
