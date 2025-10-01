@@ -10,9 +10,12 @@ int main(int argc, char *argv[])
     {
         printf("ERROR, se han digitado una cantidad erronea de datos para la ejecucion del programa.\n");
         printf("Por favor siga el siguiente formato:\n");
-        cout << "./" << argv[0] << " <numero1> <operacion> <numero2>\n";
+        cout << argv[0] << " <numero1> <operacion> <numero2>\n";
         printf("Las operaciones disponibles a realizar son:\n");
         cout << "Suma: +\nResta: -\nMultiplicacion: *\nDivision: /\n";
+        cout << "!IMPORTANTE! Asegurese de dejar un espacio entre cada argumento.\n";
+        cout << "Para el caso de la mutiplicacion, es necesario colocar el asterisco entre parentesis dobles.\n";
+        cout << "Para las demas operaciones, la estructura de los argumentos es como se especifico al inicio.\n";
         return 1;
     }
      try
